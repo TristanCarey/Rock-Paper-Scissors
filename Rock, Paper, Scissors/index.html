@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock! Paper! Scissors!</title>
+        <link rel="stylesheet" href="style.css">
+        <h1><strong>Rock! Paper! Scissors!</strong></h1>
+    </head>
+    <body>
+        <h5>
+            <img src="eagle.png">
+        </h5>
+        
+        <h2>
+            <div
+            id="wins"> Wins = 0
+            </div>
+        </h2>
+        <br>
+        <h3>
+            <div
+            id="losses">Losses = 0
+            </div>
+        </h3>
+            
+        
+            <input type="button" value="Rock" class="b1" onclick="Rock()">
+
+            <input type="button" value="Paper" class="b2" onclick="Paper()">
+
+            <input type="button" value="Scissors" class="b3" onclick="Scissors()">
+
+
+    </body>
+    <script>
+        let playerChoice ;
+        let computerChoice = '' ;
+        let wins = 0 ;
+        let losses = 0 ;
+
+        function Rock() {
+            if (wins >= 5 || losses >= 5) {
+                alert('game is over.')
+                return;}
+            playerChoice = Rock
+            computerChoice = Math.floor(Math.random() * 3)
+
+            if (computerChoice == 0) {
+                alert('Draw, rock vs rock')
+            } else if (computerChoice == 1) {
+                alert('You lose, paper covers rock')
+                losses++
+                document.getElementById("losses").innerHTML ='Losses = ' + losses;
+            } else {
+                alert('You win, rock crushes scissors')
+                wins++
+                document.getElementById("wins").innerHTML ='Wins = ' + wins;
+            }
+        } ;
+
+        function Paper() {
+            if (wins >= 5 || losses >= 5) {
+                alert('game is over')
+                return;}
+            playerChoice = Paper
+            computerChoice = Math.floor(Math.random() * 3)
+            
+            if (computerChoice == 0) {
+                alert('You win, paper covers rock')
+                wins++
+                document.getElementById("wins").innerHTML ='Wins = ' + wins;
+            } else if (computerChoice == 1) {
+                alert('Draw, paper vs paper')
+            } else {
+                alert('You lose, scissors cut paper')
+                losses++
+                document.getElementById("losses").innerHTML ='Losses = ' + losses;}
+        } ;
+
+        function Scissors() {
+            if (wins >= 5 || losses >= 5) {
+                alert('game is over')
+                return;}
+            playerChoice = Scissors
+            computerChoice = Math.floor(Math.random() * 3)
+            
+            if (computerChoice == 0) {
+                alert('You lose, rock crushes scissors')
+                losses++
+                document.getElementById("losses").innerHTML ='Losses = ' + losses;
+            } else if (computerChoice == 1) {
+                alert('You win, scissors cut paper')
+                wins++
+                document.getElementById("wins").innerHTML ='Wins = ' + wins;
+            } else {
+                lert('Draw, scissors vs scissors')}
+        } ;
+
+
+    </script>
+</html>

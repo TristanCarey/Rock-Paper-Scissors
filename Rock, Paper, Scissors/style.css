@@ -1,0 +1,92 @@
+@font-face {
+    src: url(fonts/BLKCHCRY.TTF);
+    font-family: blackW;} ;
+
+
+<title>Rock,Paper,Scissors style.css</title>
+<link rel="stylesheet" href="style.css">
+
+body {
+}
+h1 {
+    position: fixed;
+    left: 200px;
+    font-family: blackW;
+    font-size: 100px ;
+    color: cyan ;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: firebrick;
+}
+
+h2 {
+    position: fixed;
+    bottom: 300px;
+    left: 550px;
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    padding: 5px;
+    border: 10px;
+    border-right: 10px;
+    border-style: ridge;
+    border-color: green;
+    width: 200px;
+    height: 60px;
+    color: green;
+}
+h3{
+    position: fixed;
+    bottom: 195px;
+    left: 525px;
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 50px;
+    padding: 5px;
+    border: 10px;
+    border-right: 10px;
+    border-style: ridge;
+    border-color: red;
+    width: 250px;
+    height: 60px;
+    color: red;
+}
+.b1 {
+    border-style: dashed;
+    border-color: magenta;
+    position: fixed ;
+    bottom: 100px;
+    left: 300px;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+}
+.b2 {
+    border-style: dashed;
+    border-color: magenta;
+    position: fixed ;
+    bottom: 100px;
+    left: 600px;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+}
+.b3 {
+    border-style: dashed;
+    border-color: magenta;
+    position: fixed ;
+    bottom: 100px;
+    left: 900px;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+}
+h5 {
+    z-index: -1;
+    position: fixed;
+    top: -20px;
+    left: 100px;
+}
+<html>
